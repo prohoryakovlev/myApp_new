@@ -8,13 +8,16 @@ function App() {
     return (
         <div>
 
-            <input/>
+            <input />
+            <input />
             <input checked={true} value="yo" type={"password"}/>
 
-            <AppTitle/>
+            <PageTitle title={"This is APP component"}/>
+            <PageTitle title={"My friends"}/>
             Article 1
             <Rating value={3}/>
-            <Accordion/>
+            <Accordion title={"prohor Yakovlev"}/>
+            <Accordion title={"chistov sila"}/>
             Article 2
             <Rating value={0}/>
             <Rating value={1}/>
@@ -26,12 +29,12 @@ function App() {
     );
 }
 
-function AppTitle() {
-    console.log("AppTitle render")
+function PageTitle(props: any) {
+    console.log("PageTitle render")
     return (
-        <div>
-            This is APP component
-        </div>
+        <h1>
+            {props.title}
+        </h1>
     )
 }
 
