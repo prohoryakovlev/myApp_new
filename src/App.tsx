@@ -1,15 +1,27 @@
 import React from 'react';
 import './App.css';
-import {log} from "util";
+import Accordion from "./components/Accordion"
+import {Rating} from "./components/Rating/Rating";
 
 function App() {
     console.log("App render")
     return (
         <div>
+
+            <input/>
+            <input checked={true} value="yo" type={"password"}/>
+
             <AppTitle/>
-            <Rating/>
+            Article 1
+            <Rating value={3}/>
             <Accordion/>
-            <Rating/>
+            Article 2
+            <Rating value={0}/>
+            <Rating value={1}/>
+            <Rating value={2}/>
+            <Rating value={3}/>
+            <Rating value={4}/>
+            <Rating value={5}/>
         </div>
     );
 }
@@ -23,54 +35,7 @@ function AppTitle() {
     )
 }
 
-function Rating() {
-    console.log("Rating render")
-    return (
-        <div>
-            <Star/>
-            <Star/>
-            <Star/>
-            <Star/>
-            <Star/>
-        </div>
-    )
-}
 
-function Star() {
-    console.log("Star render")
-    return (
 
-        <div>Star</div>
-    )
-}
-
-function Accordion() {
-    return (
-        <div>
-            <AccordionTitle/>
-            <AccordionBody/>
-        </div>
-    )
-}
-
-function AccordionTitle() {
-    return (
-        <div>
-            <h3>Меню</h3>
-        </div>
-    )
-}
-
-function AccordionBody() {
-    return (
-        <div>
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
-        </div>
-    )
-}
 
 export default App;
