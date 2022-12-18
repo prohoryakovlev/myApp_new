@@ -11,30 +11,12 @@ function Accordion1(props: AccordionPropsType) {
         return (
             <div>
                 <AccordionTitle title={props.titleValue}/>
-                <AccordionBody/>
+                { !props.collapsed && <AccordionBody/>}
             </div>
         )
-    }
-
 }
 
-function Accordion2(props: AccordionPropsType) {
 
-    if (props.collapsed === true) {
-        return <div>
-            {true}  {1} {"asdasdasd"}
-            <AccordionTitle title={props.titleValue}/>
-        </div>
-    } else {
-        return (
-            <div>
-                <AccordionTitle title={props.titleValue}/>
-                <AccordionBody/>
-            </div>
-        )
-    }
-
-}
 
 
 type AccordionTitlePropsType = {
@@ -59,4 +41,4 @@ function AccordionBody() {
     )
 }
 
-export default Accordion
+export default Accordion1
