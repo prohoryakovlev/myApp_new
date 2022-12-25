@@ -3,6 +3,7 @@ import './App.css';
 import Accordion from "./components/Accordion/Accordion"
 import {Rating} from "./components/Rating/Rating";
 import OnOff from "./components/OnOff/OnOff";
+import UncontrolledAccordion from "./components/UncoControlledAccordion/Accordion";
 
 function App(props:any) {
     console.log("App render")
@@ -11,14 +12,17 @@ function App(props:any) {
 
 
             <OnOff />
+            <OnOff />
+            <OnOff />
+            <OnOff />
             {/*<OnOff />*/}
             {/*<OnOff />*/}
 
             {/*<input checked={true} value="yo" type={"password"}/>*/}
 
 
-            {/*<Accordion titleValue={"Menu"} collapsed={true}/>*/}
-            {/*<Accordion  titleValue={"User"} collapsed={false}/>*/}
+            <UncontrolledAccordion titleValue={"Menu"} />
+            <UncontrolledAccordion  titleValue={"User"} />
             {/*<Rating value={1}/>*/}
             {/*<Rating value={2}/>*/}
             {/*<Rating value={3}/>*/}
