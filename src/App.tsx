@@ -10,9 +10,9 @@ function App(props:any) {
         <div>
 
 
-            <OnOff on={false}/>
-            <OnOff on={true}/>
-            <OnOff on={false}/>
+            <OnOff />
+            {/*<OnOff />*/}
+            {/*<OnOff />*/}
 
             {/*<input checked={true} value="yo" type={"password"}/>*/}
 
