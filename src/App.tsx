@@ -20,6 +20,7 @@ function App(props:any) {
 
             {/*<input checked={true} value="yo" type={"password"}/>*/}
 
+            {/*<Accordion titleValue={"Menu"} collapsed={false} />*/}
 
             <UncontrolledAccordion titleValue={"Menu"} />
             {/*<UncontrolledAccordion  titleValue={"User"} />*/}
