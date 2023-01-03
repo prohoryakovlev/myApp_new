@@ -8,13 +8,13 @@ import UncontrolledAccordion from "./components/UncoControlledAccordion/Accordio
 function App(props:any) {
     console.log("App render")
     return (
-        <div>
+        <div className={"App"}>
 
 
             <OnOff />
-            <OnOff />
-            <OnOff />
-            <OnOff />
+            {/*<OnOff />*/}
+            {/*<OnOff />*/}
+            {/*<OnOff /> */}
             {/*<OnOff />*/}
             {/*<OnOff />*/}
 
@@ -22,7 +22,7 @@ function App(props:any) {
 
 
             <UncontrolledAccordion titleValue={"Menu"} />
-            <UncontrolledAccordion  titleValue={"User"} />
+            {/*<UncontrolledAccordion  titleValue={"User"} />*/}
             {/*<Rating value={1}/>*/}
             {/*<Rating value={2}/>*/}
             {/*<Rating value={3}/>*/}
