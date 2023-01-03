@@ -21,12 +21,12 @@ function App(props:any) {
 
             {/*<input checked={true} value="yo" type={"password"}/>*/}
 
-            {/*<Accordion titleValue={"Menu"} collapsed={false} />*/}
+            <Accordion titleValue={"Menu"} collapsed={false} />
 
             <UncontrolledAccordion titleValue={"Menu"} />
             {/*<UncontrolledAccordion  titleValue={"User"} />*/}
             <UncontrolledRating />
-            {/*<UncontrolledRating value={2}/>*/}
+            <Rating value={3}/>
             {/*<UncontrolledRating value={3}/>*/}
             {/*<UncontrolledRating value={4}/>*/}
             {/*<UncontrolledRating value={5}/>*/}
