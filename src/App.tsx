@@ -24,9 +24,9 @@ function App(props: any) {
 
 
             {/*<UncontrolledOnOff/>*/}
-            <OnOff on={switchOn} onChange={(on)=> {setSwitchOn(on)}}/>
+            {/*<OnOff on={switchOn} onChange= {setSwitchOn}/>*/}
             {/*<UncontrolledOnOff />*/}
-            {/*<UncontrolledOnOff />*/}
+            <UncontrolledOnOff onChange={setSwitchOn}/> {switchOn.toString()}
             {/*<UncontrolledOnOff /> */}
             {/*<UncontrolledOnOff />*/}
             {/*<UncontrolledOnOff />*/}
@@ -35,7 +35,7 @@ function App(props: any) {
 
             {/*<Rating value={3}/>*/}
             {/*<UncontrolledRating/>*/}
-            {/*<UncontrolledAccordion titleValue={"Menu"} />*/}
+            <UncontrolledAccordion titleValue={"Menu"} />
             {/*<UncontrolledAccordion  titleValue={"User"} />*/}
             {/*<UncontrolledRating value={3}/>*/}
             {/*<UncontrolledRating value={4}/>*/}
