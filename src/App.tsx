@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
-import Accordion, {AccordionPropsType} from "./components/Accordion/Accordion"
+import Accordion from "./components/Accordion/Accordion"
 import {Rating, RatingValueType} from "./components/Rating/Rating";
 import OnOff from "./components/OnOff/OnOff";
 import UncontrolledAccordion from "./components/UncoControlledAccordion/UncontrolledAccordion";
@@ -15,7 +15,9 @@ function App(props: any) {
     return (
         <div className={"App"}>
 
-        <Accordion titleValue={"Menu"} collapsed={accordionCollapsed} />
+        <Accordion titleValue={"Menu"}
+            collapsed={accordionCollapsed}
+            onChange={()=>{setAccordionCollapsed(!accordionCollapsed)}}/>
 
             <Rating value={ratingValue} onClick={setRatingValue}/>
 
