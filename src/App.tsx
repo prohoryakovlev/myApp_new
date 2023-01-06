@@ -3,7 +3,7 @@ import './App.css';
 import Accordion from "./components/Accordion/Accordion"
 import {Rating} from "./components/Rating/Rating";
 import OnOff from "./components/OnOff/OnOff";
-import UncontrolledAccordion from "./components/UncoControlledAccordion/Accordion";
+import UncontrolledAccordion from "./components/UncoControlledAccordion/UncontrolledAccordion";
 import {UncontrolledRating} from "./components/UncontrolledRating/UncontrolledRating";
 
 function App(props:any) {
