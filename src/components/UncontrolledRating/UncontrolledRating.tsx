@@ -1,9 +1,7 @@
 import React, {useState} from "react";
 
 
-type RatingProps = {
-
-}
+type RatingProps = {}
 
 
 export function UncontrolledRating(props: RatingProps) {
@@ -13,11 +11,11 @@ export function UncontrolledRating(props: RatingProps) {
 
     return (
         <div>
-            <Star selected={value > 0}/><button onClick={()=>{setValue(1)}}>1</button>
-            <Star selected={value > 1}/><button onClick={()=>{setValue(2)}}>2</button>
-            <Star selected={value > 2}/><button onClick={()=>{setValue(3)}}>3</button>
-            <Star selected={value > 3}/><button onClick={()=>{setValue(4)}}>4</button>
-            <Star selected={value > 4}/><button onClick={()=>{setValue(5)}}>5</button>
+            <Star selected={value > 0}/>
+            <Star selected={value > 1}/>
+            <Star selected={value > 2}/>
+            <Star selected={value > 3}/>
+            <Star selected={value > 4}/>
         </div>
     )
 
@@ -29,10 +27,11 @@ export function UncontrolledRating(props: RatingProps) {
     function Star(props: StarPropsType) {
         console.log("Star render")
 
-        if (props.selected === true) {
-            return <span><b>Star</b> </span>
-        } else {
-            return <span>Star </span>
-        }
+
+        return <span>
+            {props.selected ? <b>star</b> : "star"}
+        </span>
+
+
     }
 }
